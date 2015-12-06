@@ -1,0 +1,50 @@
+<style type="text/css">
+	#scan {
+		width: 100%;
+		background-color: green;
+		height: 100%;
+		text-align: center;
+		color: white;
+		font-size: 40px;
+	}
+	p {
+		padding-top: 50%;
+		display: block;
+	}
+	.row {
+		height: 50%;
+		width: 100%;
+	}
+	.row img {
+		height: 70%;
+		width: auto;
+		margin: auto;
+	}
+
+	.bottom img {
+		-ms-transform: rotate(180deg); /* IE 9 */
+	    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+	    transform: rotate(180deg);
+	}
+	.scroll {
+		height: 100%;
+	}
+</style>
+<ion-pane>
+
+
+	<div id="scan" ng-click="scan()">
+		
+		<p>Scan</p>
+
+	</div>
+
+	<div class="row top">
+		<img ng-click="nextSlide()" src="img/up.png">
+	</div>
+
+	<div class="row bottom">
+		<img ng-click="previousSlide()" src="img/up.png">
+	</div>
+
+</ion-pane>
